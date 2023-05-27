@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/k2font/interface-test-go/sub"
+)
 
 // 構造体 ≒ 他の言語でいうクラス、と雑に考えていい
 type Circle struct {
@@ -42,4 +46,6 @@ func main() {
 	// Square型の変数を定義
 	square := Square{Height: 2}
 	DisplayArea(square) // 4
+
+	sub.Main2()
 }
